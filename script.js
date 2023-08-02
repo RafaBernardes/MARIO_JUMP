@@ -1,8 +1,8 @@
-const mario = document.querySelector(".mario");   /* "querySelector" PERMITE SELECIONAR UM ELEMENTO PELA CLASSE E TAMBEM TEMOS ACESSO AS ESTILIZAÇÕES*/
+const mario = document.querySelector(".mario");
 
 const pipe = document.querySelector(".pipe");
 
-const jump = () => {   /* "() => {}" - ARROW FUNCTION */ 
+const jump = () => {
     mario.classList.add ("jump");
 
     setTimeout(() => {
@@ -29,4 +29,4 @@ const loop = setInterval(() => {
     }
 }, 10);
 
- document.addEventListener("keydown" , jump);  /* "keydown" - QUALQUER TECLA QUE APERTAR EXECUTA A AÇÃO*/
+ document.addEventListener("keydown" , jump);
